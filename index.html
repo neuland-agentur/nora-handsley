@@ -1,34 +1,82 @@
 <html>
     <head>
         <title>Nora Handsley</title>
-        <style></style>
+        <style>
+            *{
+                appearance: none;
+                margin: 0;
+                padding: 0;
+                color: white;
+                font-size: 1rem;
+                font-weight: normal;
+                text-decoration: none;
+                list-style: none;
+                font-family: sans-serif;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            html{
+                font-size: 16px;
+                background: black;
+            }
+            nav{
+                position: fixed;
+                width: 100%;
+            }
+            .navlist{
+                padding: 0 0.5rem;
+            }
+            .navitem{
+                width: 50%;
+            }
+            li{
+                display: inline-block;
+            }
+            .left{
+                text-align: left;
+            }
+            .right{
+                text-align: right;
+            }
+            a{
+                padding: 1rem 0.5rem;
+                display: block;
+            }
+            img{
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 50%;
+                height: auto;
+                border: 2px solid white;
+            }
+        </style>
     </head>
     <body>
-        <aside>
-            <nav>
-                <ul>
-                    <li>
-                        <h1>
-                            <a href="/">
-                                Nora Handsley
+        <nav>
+            <ul class="navlist">
+                <li class="navitem left">
+                    <h1>
+                        <a href="/">
+                            Nora Handsley
+                        </a>
+                    </h1>
+                </li><li class="navitem right">
+                    <ul>
+                        <li>
+                            <a href="/about">
+                                About
                             </a>
-                        </h1>
-                    </li>
-                    <li>
-                        <a href="/about">
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/index">
-                            Index
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-        <main>
-            <img src="./img/demo.jpg">
-        </main>
+                        </li><li>
+                            <a href="/index">
+                                Index
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <img src="./img/demo.jpg">
     </body>
 </html>
