@@ -1,0 +1,20 @@
+img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+img.border{
+    border: 2px solid white;
+}
+img.no-border{
+    border: none;
+}
+img.portrait{
+    height: 80%;
+    width: auto;
+}
+img.landscape{
+    width: 50%;
+    height: auto;
+}
