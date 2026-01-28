@@ -46,10 +46,21 @@
                 position: fixed;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%); 
+            }
+            img.border{
+                border: 2px solid white;
+            }
+            img.no-border{
+                border: none;
+            }
+            img.portrait{
+                height: 80%;
+                width: auto;
+            }
+            img.landscape{
                 width: 50%;
                 height: auto;
-                border: 2px solid white;
             }
         </style>
     </head>
@@ -77,6 +88,63 @@
                 </li>
             </ul>
         </nav>
-        <img src="./img/demo.jpg">
+        <a id="link" href="/projects/test">
+            <img id="image" src="./img/1.jpg">
+        </a>
+        <script>
+            let root = "./img/"
+
+            let images = [
+                {
+                    source: "1.jpg",
+                    class: "border landscape",
+                    link: "test1"
+                },
+                {
+                    source: "2.png",
+                    class: "no-border landscape",
+                    link: "test2"
+                },
+                {
+                    source: "3.jpg",
+                    class: "border landscape",
+                    link: "test3"
+                },
+                {
+                    source: "4.jpg",
+                    class: "border portrait",
+                    link: "test4"
+                }
+            ]
+
+            let image = document.getElementById("image")
+            let link = document.getElementById("link")
+            let n = 3
+            
+            function setImage(){
+                n++
+                let i = n % images.length
+                image.src = root + images[i].source
+                image.classList = images[i].class
+                link.href = images[i].link
+                setTimeout(setImage, 1000)
+            }
+
+            setImage()
+        </script>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
