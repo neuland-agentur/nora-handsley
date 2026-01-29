@@ -1,36 +1,14 @@
 <html>
     <head>
-        <link rel="stylesheet" href="/css/style.css">
+        {{ partial "head.html" . }}
         <link rel="stylesheet" href="/css/project.css">
     </head>
     <body>
-        <nav>
-            <ul class="navlist">
-                <li class="navitem left">
-                    <a href="/">
-                        Nora Handsley
-                    </a>
-                </li><li class="navitem right">
-                    <ul>
-                        <li>
-                            <h1>
-                                <a href="/about">
-                                    About
-                                </a>
-                            </h1>
-                        </li><li>
-                            <a href="/projects">
-                                Index
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+        {{ partial "navigation.html" . }}
         <main>
             <img onclick="test()" id="mainImg" src="/img/project/NoraHandsley-1.jpg">
-            <div class="leftNote">Heiligeili</div>
-           <div class="rightNote">2022</div>
+            <div class="leftNote">{{.Title}}</div>
+           <div class="rightNote">{{.Params.Year}}</div>
         </main>
         <aside>
             

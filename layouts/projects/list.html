@@ -1,32 +1,10 @@
 <html>
     <head>
-        <link rel="stylesheet" href="/css/style.css">
+        {{ partial "head.html" . }}
         <link rel="stylesheet" href="/css/projects.css">
     </head>
     <body>
-        <nav>
-            <ul class="navlist">
-                <li class="navitem left">
-                    <a href="/">
-                        Nora Handsley
-                    </a>
-                </li><li class="navitem right">
-                    <ul>
-                        <li>
-                            <h1>
-                                <a href="/about">
-                                    About
-                                </a>
-                            </h1>
-                        </li><li>
-                            <a href="/projects">
-                                Index
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+        {{ partial "navigation.html" . }}
         <main>
             <ol>
                 <li>
