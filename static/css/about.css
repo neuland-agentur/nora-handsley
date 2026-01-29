@@ -3,6 +3,7 @@ main{
     width: 100%;
     box-sizing: border-box;
     margin-top: 50vh;
+    font-size: 0;
 }
 main div{
     display: inline-block;
@@ -11,6 +12,7 @@ main div{
     text-transform: none;
     box-sizing: border-box;
     padding-right: 2rem;
+    font-size: 1rem;
 }
 main div:last-of-type{
     padding-right: 0;

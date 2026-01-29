@@ -1,0 +1,19 @@
+<html>
+    <head>
+        {{ partial "head.html" . }}
+        <link rel="stylesheet" href="/css/about.css">
+    </head>
+    <body>
+        {{ partial "navigation.html" . }}
+        <main>
+            {{range .Pages}}
+                <div>
+                    <h2>{{.Title}}</h2>
+                    {{.Content}}
+                </div>
+            {{end}}
+        </main>
+    </body>
+</html>
+
+
