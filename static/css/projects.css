@@ -1,0 +1,35 @@
+
+main{
+    height: 100vh;
+    width: 100%;
+    
+}
+main ol{
+    width: 100%;
+    height: auto;
+    margin-top: 20vh;
+}
+main ol > li{
+    height: 20vh;
+    position: relative;
+    overflow-y: scroll;
+    display: block;
+}
+main ol ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: auto;
+    white-space: nowrap;
+}
+main li{
+    display: inline;
+}
+main li img{
+    height: 100%;
+    width: auto;
+    margin-right: 1rem;
+}

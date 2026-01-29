@@ -1,0 +1,25 @@
+main{
+    padding: 0 1rem; 
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 50vh;
+}
+main div{
+    display: inline-block;
+    width: 33.3333%;
+    vertical-align: top;
+    text-transform: none;
+    box-sizing: border-box;
+    padding-right: 2rem;
+}
+main div:last-of-type{
+    padding-right: 0;
+}
+main div h2{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+main li,
+main p{
+    margin-bottom: 1rem;
+}

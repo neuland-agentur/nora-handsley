@@ -1,0 +1,49 @@
+
+
+main{
+    height: 80vh;
+    width: 100%;
+    position: relative;
+}
+#mainImg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    max-height: 80%;
+    max-width: 80%;
+}
+aside{
+    height: 20vh;
+    width: 100%;
+    position: relative;
+    overflow-y: scroll;
+}
+aside ul{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: auto;
+    white-space: nowrap;
+}
+aside li{
+    display: inline;
+}
+aside li img{
+    height: 100%;
+    width: auto;
+    margin-right: 1rem;
+}
+.leftNote{
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+}
+.rightNote{
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+}
