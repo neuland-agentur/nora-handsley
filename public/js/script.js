@@ -4,12 +4,12 @@ let root = "./img/"
                 {
                     source: "1.jpg",
                     class: "border landscape",
-                    link: "projects/heiligeili"
+                    link: "projects/daskomischegefuehl"
                 },
                 {
                     source: "2.png",
                     class: "no-border landscape",
-                    link: "projects/heiligeili"
+                    link: "projects/goodluckaroundeveryturn"
                 },
                 {
                     source: "3.jpg",
@@ -19,7 +19,7 @@ let root = "./img/"
                 {
                     source: "4.jpg",
                     class: "border portrait",
-                    link: "projects/heiligeili"
+                    link: "projects/ongoingpissed"
                 }
             ]
 
@@ -33,7 +33,7 @@ let root = "./img/"
                 image.src = root + images[i].source
                 image.classList = images[i].class
                 link.href = images[i].link
-                setTimeout(setImage, 1000)
+                setTimeout(setImage, 2500)
             }
 
             setImage()
