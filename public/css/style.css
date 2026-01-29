@@ -15,17 +15,26 @@
     margin: 0;
     padding: 0;
     color: white;
-    font-size: 1rem;
     font-weight: normal;
     text-decoration: none;
     list-style: none;
     font-family: "Inter", monospace;
     font-weight: 400;
 }
+a:hover{
+    color: #ff50ff !important;
+
+}
+.active{
+    color: #ffcc00 !important;
+}
 html{
     font-size: 16px;
     background: black;
     text-transform: uppercase;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 1rem;
 }
 nav{
     position: fixed;
@@ -52,3 +61,50 @@ a{
     padding: 1rem 0.5rem;
     display: block;
 }
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    font-size: 0.5rem;
+}
+footer ul{
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+footer ul li{
+    width: 30%;
+}
+footer ul li a{
+    display: inline;
+    text-decoration: underline;
+    padding: 0;
+}
+footer ul li:nth-of-type(2){
+    text-align: center;
+}
+footer ul li:last-of-type{
+    text-align: right;
+}
+#legal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20vh;
+}
+@media (max-aspect-ratio: 1/1){
+    .desktop{
+        display: none;
+    }
+    nav {
+        background: black;
+    }
+ 
+}
+
+

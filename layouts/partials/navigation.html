@@ -9,11 +9,11 @@
                 </li><li class="navitem right">
                     <ul>
                         <li>
-                            <a href="/about">
+                            <a {{if eq (upper .Title) "ABOUT"}}class="active"{{end}} href="/about">
                                 About
                             </a>
                         </li><li>
-                            <a href="/projects">
+                            <a {{if eq (upper .Title) "INDEX"}}class="active"{{end}} href="/projects">
                                 Index
                             </a>
                         </li>

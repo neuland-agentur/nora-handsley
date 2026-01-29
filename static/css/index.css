@@ -18,3 +18,16 @@ img.landscape{
     width: 50%;
     height: auto;
 }
+@media (max-aspect-ratio: 1/1){
+    img.landscape{
+        width: 80%;
+        height: auto;
+    }
+     img.portrait{
+        width: 60%;
+        height: auto;
+    }
+    footer{
+        display: none;
+    }
+}
