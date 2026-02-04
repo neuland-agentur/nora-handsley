@@ -17,3 +17,5 @@ mainImg: ./hd/193.jpeg
 - ![](./sd/204.jpeg)
 - ![](./sd/205.jpeg)
 - ![](./sd/206.jpeg)
+- ![](./sd/Ausstellungsansicht01.jpeg)
+- ![](./sd/Ausstellungsansicht02.jpeg)
