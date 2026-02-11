@@ -16,11 +16,11 @@ let root = "./img/"
                     class: "border landscape",
                     link: "projects/heiligeili"
                 },
-                {
-                    source: "4.jpg",
-                    class: "border portrait",
-                    link: "projects/ongoingpissed"
-                }
+                // {
+                //     source: "4.jpg",
+                //     class: "border portrait",
+                //     link: "projects/ongoingpissed"
+                // }
             ]
 
             let image = document.getElementById("image")

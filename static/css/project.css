@@ -38,16 +38,7 @@ aside li img{
     width: auto;
     margin-right: 1rem;
 }
-.leftNote{
-    position: absolute;
-    bottom: 0;
-    left: 1rem;
-}
-.rightNote{
-    position: absolute;
-    bottom: 0;
-    right: 1rem;
-}
+
 @media (max-aspect-ratio: 1/1){
     .leftNote{
         width: 50%;

@@ -3,6 +3,7 @@ layout: projects
 title: ongoing Pissed
 year: 2025
 mainImg: ./hd/1.jpeg
+draft: True
 ---
 - ![](./sd/1.jpeg)
 - ![](./sd/2.jpeg)

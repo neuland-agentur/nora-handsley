@@ -6,7 +6,7 @@ main ol{
     margin-bottom: 20vh;
 }
 main ol > li{
-    height: 20vh;
+    height: 25vh;
     position: relative;
     overflow-y: scroll;
     display: block;
@@ -17,6 +17,7 @@ main ol ul{
     left: 0;
     height: 100%;
     padding: 1rem;
+    padding-bottom: 2rem;
     box-sizing: border-box;
     width: auto;
     white-space: nowrap;

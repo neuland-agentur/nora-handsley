@@ -57,6 +57,16 @@ li{
 .right{
     text-align: right;
 }
+.leftNote{
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+}
+.rightNote{
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+}
 a{
     padding: 1rem 0.5rem;
     display: block;
