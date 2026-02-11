@@ -12,9 +12,11 @@
                 <li>
                     <div class="leftNote">{{.Title}}</div>
                     <div class="rightNote">{{.Params.Year}}</div>
-                    <a href="{{.Permalink}}">
-                       {{.Content}}
-                    </a>
+                    <div class="images">
+                        <a href="{{.Permalink}}">
+                           {{.Content}}
+                        </a>
+                    </div>
                 </li>
                 {{end}}
             </ol>
