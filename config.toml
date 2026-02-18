@@ -1,1 +1,5 @@
 disableKinds = [ "RSS", "sitemap", "robotsTXT"]
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -30,6 +30,23 @@ main li img{
     width: auto;
     margin-right: 1rem;
 }
+main li .textSlide {
+    height: 100%;  /* Gleiche Höhe wie Bilder */
+    width: auto;
+    aspect-ratio: 1 / 1;  /* Quadratisch */
+    margin-right: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    background: #333;
+    color: white;
+    padding: 10px;  /* Weniger padding */
+    text-align: center;
+    cursor: pointer;
+    font-size: 10px;  /* Kleinere Schrift */
+    line-height: 1.2;
+    overflow: hidden;
+}
 @media (max-aspect-ratio: 1/1){
     footer{
         position: initial;
