@@ -4,6 +4,10 @@
         <link rel="stylesheet" href="/css/project.css">
     </head>
     <body>
+        <div id="clickAreas" class="clickAreas">
+            <div id="clickAreaLeft" class="clickArea clickAreaLeft" onclick="slideLeft()"></div>
+            <div id="clickAreaRight" class="clickArea clickAreaRight"  onclick="slideRight()"></div>
+        </div>
         {{ partial "navigation.html" . }}
         <main>
             <img id="mainImg" src="{{.Params.mainImg}}">
@@ -13,6 +17,7 @@
         <aside id="images">
              {{.Content}}
         </aside>
+        
         <script src="/js/project.js"></script>
     </body>
 </html>

@@ -6,8 +6,12 @@ main ol{
     margin-bottom: 20vh;
 }
 main ol > li{
-    height: 25vh;
     position: relative;
+    display: block;
+}
+.images{
+    position: relative;
+    height: 25vh;
     overflow-y: scroll;
     display: block;
 }
@@ -17,7 +21,7 @@ main ol ul{
     left: 0;
     height: 100%;
     padding: 1rem;
-    padding-bottom: 2rem;
+    padding-top: 2rem;
     box-sizing: border-box;
     width: auto;
     white-space: nowrap;
@@ -46,6 +50,16 @@ main li .textSlide {
     font-size: 10px;  /* Kleinere Schrift */
     line-height: 1.2;
     overflow: hidden;
+}
+.leftNote{
+    position: absolute;
+    top: 0;
+    left: 1rem;
+}
+.rightNote{
+    position: absolute;
+    top: 0;
+    right: 1rem;
 }
 @media (max-aspect-ratio: 1/1){
     footer{

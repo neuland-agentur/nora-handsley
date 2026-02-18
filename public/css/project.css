@@ -4,6 +4,7 @@ main{
     height: 80vh;
     width: 100%;
     position: relative;
+    pointer-events: none;
 }
 #mainImg{
     position: absolute;
@@ -13,6 +14,7 @@ main{
     max-height: 80%;
     max-width: 80%;
     border: 2.5px solid white;
+    pointer-events: all;
 }
 aside{
     height: 20vh;
@@ -56,6 +58,30 @@ aside li .textSlide {
     font-size: 14px;
     line-height: 1.4;
     overflow: hidden;
+.leftNote{
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+}
+.rightNote{
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+}
+.clickArea{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 50%;
+}
+.clickAreaLeft{
+    left: 0;
+    cursor: w-resize;
+    
+}
+.clickAreaRight{
+    right: 0;
+    cursor: e-resize;
 }
 
 aside li .textSlide:hover {
