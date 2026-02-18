@@ -1,39 +1,59 @@
 const mainImg = document.getElementById("mainImg")
 
-const images = [].slice.call(document.getElementById("images").getElementsByTagName("img"))
+// Alle Galerie-Elemente (Bilder UND Text) sammeln
+const galleryItems = []
+const imagesContainer = document.getElementById("images")
+if(imagesContainer) {
+    const listItems = imagesContainer.querySelectorAll("li")
+    listItems.forEach(li => {
+        const img = li.querySelector("img")
+        const textSlide = li.querySelector(".textSlide")
+        if(img) {
+            galleryItems.push({type: 'image', element: img})
+        } else if(textSlide) {
+            galleryItems.push({type: 'text', element: textSlide})
+        }
+    })
+}
 
 let selected = 0
 
 function _init(){
     _setInitImage()
     let id = 0
-    for(let img of images){
-        img.id = "image" + id
-        img.onclick = function(){
-            showImage(img)
+    
+    for(let item of galleryItems){
+        item.id = "item" + id
+        item.element.onclick = function(){
+            showItem(item)
         }
         id++
     }
 
     function _setInitImage(){
-        let a = Number(("" + window.location).split("#")[1].replace("image",""))
-        if(images[a]){
-            showImage(images[a])
+        let a = Number(("" + window.location).split("#")[1].replace("item",""))
+        if(galleryItems[a]){
+            showItem(galleryItems[a])
         }
     }
 }
 
-<<<<<<< HEAD
-const textSlides = document.querySelectorAll(".textSlide")
-for(let slide of textSlides){
-    slide.onclick = function(){
-        showText(slide)
+function showItem(item){
+    selected = galleryItems.indexOf(item)
+    
+    if(item.type === 'image'){
+        showImage(item.element)
+    } else if(item.type === 'text'){
+        showText(item.element)
     }
+    
+    _setUrl(item.id)
 }
 
 function showImage(img){
     mainImg.src = img.src.replace("sd","hd")
     mainImg.style.display = "block"
+    
     const textDisplay = document.getElementById("textDisplay")
     if(textDisplay) textDisplay.style.display = "none"
 }
@@ -51,12 +71,6 @@ function showText(slide){
     textDisplay.innerText = slide.dataset.text
     textDisplay.style.display = "block"
 }
-=======
-function showImage(img){
-    selected = images.indexOf(img)
-    mainImg.src =  img.src.replace("sd","hd")
-    _setUrl(img.id)
-}
 
 function slideLeft(){
     _slide(-1)
@@ -67,17 +81,15 @@ function slideRight(){
 }
 
 function _slide(d){
-
     selected += d
-    selected = (images.length + selected) % images.length
-    let img = images[selected]
-    showImage(img)
-    _setUrl(img.id)
+    selected = (galleryItems.length + selected) % galleryItems.length
+    let item = galleryItems[selected]
+    showItem(item)
 }
 
 function _setUrl(id){
+    if(!id) return
     window.location = window.location.origin + window.location.pathname + "#" + id
 }
 
 window.addEventListener("DOMContentLoaded",_init)
->>>>>>> 79cb1635390c75ab49d6d61b5adf35384a5d430d
