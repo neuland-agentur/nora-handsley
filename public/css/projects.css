@@ -35,19 +35,19 @@ main li img{
     margin-right: 1rem;
 }
 main li .textSlide {
-    height: 100%;  /* Gleiche Höhe wie Bilder */
+    height: 100%; 
     width: auto;
-    aspect-ratio: 1 / 1;  /* Quadratisch */
+    aspect-ratio: 1 / 1;  
     margin-right: 1rem;
     display: inline-block;
     vertical-align: top;
     box-sizing: border-box;
     background: #333;
     color: white;
-    padding: 10px;  /* Weniger padding */
+    padding: 10px; 
     text-align: center;
     cursor: pointer;
-    font-size: 10px;  /* Kleinere Schrift */
+    font-size: 10px;  
     line-height: 1.2;
     overflow: hidden;
 }

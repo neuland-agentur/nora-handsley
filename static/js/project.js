@@ -1,6 +1,6 @@
 const mainImg = document.getElementById("mainImg")
 
-// Alle Galerie-Elemente (Bilder UND Text) sammeln
+
 const galleryItems = []
 const imagesContainer = document.getElementById("images")
 if(imagesContainer) {
