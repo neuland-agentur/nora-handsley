@@ -12,9 +12,20 @@
                     {{.Content}}
                 </div>
             {{end}}
+            
+            <div class="postit-container">
+                <img src="/img/callMePostIt.png" alt="Call me!" class="postit">
+                <div class="contact-links">
+                    <a href="mailto:nora.handsley@gmail.com" class="contact-link" title="Mail">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="https://www.instagram.com/norahandsley/" target="_blank" class="contact-link" title="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
         </main>
         {{ partial "footer.html" . }}
+        <script src="/js/about.js"></script>
     </body>
 </html>
-
-
