@@ -1,9 +1,11 @@
 ---
 layout: about
-title: CV
+bio: true
 ---
-Nora Lou Handsley, born 1998, in Cologne, now lives and works in Hamburg.
 
-Her creative journey began in her teenage years with early experiences in photography, including roles as an assistant and intern in the field.
-
-When not behind the camera, Nora finds inspiration on her skateboard or in music, which serves both as a soundtrack and an expression of her artistic journey.
+Nora Handsley (\*1998) is a visual artist based in Hamburg, where she studied Communication Design at HAW
+Hamburg.
+Her work explores urban space, youth, illness, and personal experience, with a sensibility that embraces
+vulnerability, humor and empowerment.
+Based on her own experiences with epilepsy and a brain tumour, she uses photography to create her own narrative and maintain her autonomy in the experience of illness.
+Since 2023, she has been an active member of the Hamburg-based ZUS collective, co-organizing exhibitions and events that question and rethink public space. Through her work, Nora creates visual and physical spaces where individual stories can unfold and resonate, focusing on how we move through, perceive, and inhabit the world around us.

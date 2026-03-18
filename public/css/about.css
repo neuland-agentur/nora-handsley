@@ -1,106 +1,106 @@
-main{
-    padding: 0 1rem; 
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 50vh;
-    font-size: 0;
+main {
+  padding: 0 1rem 4rem 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 50vh;
+  font-size: 0;
 }
 
-main > div:not(.postit-container){
-    display: inline-block;
-    width: 25%;  
-    vertical-align: top;
-    text-transform: none;
-    box-sizing: border-box;
-    padding-right: 2rem;
-    font-size: 1rem;
+main > div:not(.postit-container) {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+  text-transform: none;
+  box-sizing: border-box;
+  padding-right: 2rem;
+  font-size: 1rem;
 }
 
-main > div:not(.postit-container):last-of-type{
-    padding-right: 0;
+main > div:not(.postit-container):last-of-type {
+  padding-right: 0;
 }
 
-main div h2{
-    text-transform: uppercase;
-    margin-bottom: 1rem;
+main div h2 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 main li,
-main p{
-    margin-bottom: 1rem;
+main p {
+  margin-bottom: 1rem;
 }
 
 .postit-container {
-    display: inline-block !important;
-    width: 25% !important;
-    vertical-align: top;
-    padding-right: 0;
-    text-align: center;
-    cursor: pointer;
-    position: relative;
-    top: 2rem;    
-    left: 1rem;    
-    font-size: 1rem;
+  display: inline-block !important;
+  width: 25% !important;
+  vertical-align: top;
+  padding-right: 0;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  top: 2rem;
+  left: 1rem;
+  font-size: 1rem;
 }
 
 .postit {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
-    transform: rotate(-8deg);
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
-    transition: transform 0.3s;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  transform: rotate(-8deg);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
 }
 
 .postit:hover {
-    transform: rotate(-8deg) scale(1.05);
+  transform: rotate(-8deg) scale(1.05);
 }
 .contact-links {
-    display: none; 
-    flex-direction: row;  /* Nebeneinander statt untereinander */
-    gap: 1.5rem;
-    margin-top: 1rem;
-    position: relative;
-    z-index: 10;
-    justify-content: center;
+  display: none;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 10;
+  justify-content: center;
 }
 
-.contact-link {
-    font-size: 2.5rem;  /* Icon-Größe */
-    color: white !important;
-    text-decoration: none;
-    padding: 0.8rem;
-    background: transparent;  /* Kein Hintergrund */
-    transition: all 0.3s;
-    cursor: pointer !important;
-    pointer-events: auto !important;
-    z-index: 999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.postit-container .contact-link {
+  font-size: 2.5rem;
+  color: #ff69b4 !important;
+  text-decoration: none;
+  padding: 0.8rem;
+  background: transparent;
+  transition: all 0.3s;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.contact-link:hover {
-    color: #FF69B4 !important;  /* Pink beim Hover */
-    transform: scale(1.2);  /* Leicht größer */
+.postit-container .contact-link:hover {
+  color: #ffcc00 !important;
+  transform: scale(1.2);
 }
 .postit-container.active .contact-links {
-    display: flex;
+  display: flex;
 }
-@media (max-aspect-ratio: 1/1){
-    main{
-        margin-bottom: 20vh;
-    }
-    main div,
-    .postit-container{
-        width: 100%;
-        padding: 0;
-        margin-bottom: 3rem;
-    }
-    footer{
-        position: initial;
-    }
-    footer ul li{
-        width: auto;
-    }
+@media (max-aspect-ratio: 1/1) {
+  main {
+    margin-bottom: 20vh;
+  }
+  main div,
+  .postit-container {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 3rem;
+  }
+  footer {
+    position: initial;
+  }
+  footer ul li {
+    width: auto;
+  }
 }

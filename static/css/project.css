@@ -1,136 +1,133 @@
-
-
-main{
-    height: 80vh;
-    width: 100%;
-    position: relative;
-    pointer-events: none;
+main {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  pointer-events: none;
 }
-#mainImg{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%); 
-    max-height: 80%;
-    max-width: 80%;
-    border: 2.5px solid white;
-    pointer-events: all;
+#mainImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 80%;
+  max-width: 80%;
+  border: 2.5px solid white;
+  pointer-events: all;
 }
-aside{
-    height: 20vh;
-    width: 100%;
-    position: relative;
-    overflow-y: scroll;
+aside {
+  height: 20vh;
+  width: 100%;
+  position: relative;
+  overflow-y: scroll;
 }
-aside ul{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    padding: 1rem;
-    box-sizing: border-box;
-    width: auto;
-    white-space: nowrap;
+aside ul {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  width: auto;
+  white-space: nowrap;
 }
-aside li{
-    display: inline;
+aside li {
+  display: inline;
 }
-aside li img{
-    height: 100%;
-    width: auto;
-    margin-right: 1rem;
+aside li img {
+  height: 100%;
+  width: auto;
+  margin-right: 1rem;
 }
-.leftNote{
-    position: absolute;
-    bottom: 0;
-    left: 1rem;
+.leftNote {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
 }
-.rightNote{
-    position: absolute;
-    bottom: 0;
-    right: 1rem;
+.rightNote {
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
 }
-.clickArea{
-    position: fixed;
-    top: 0;
-    height: 100%;
-    width: 50%;
+.clickArea {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 50%;
 }
-.clickAreaLeft{
-    left: 0;
-    cursor: w-resize;
-    
+.clickAreaLeft {
+  left: 0;
+  cursor: w-resize;
 }
-.clickAreaRight{
-    right: 0;
-    cursor: e-resize;
+.clickAreaRight {
+  right: 0;
+  cursor: e-resize;
 }
 aside li .textSlide {
-    height: 100%;
-    width: auto;
-    aspect-ratio: 1 / 1;
-    margin-right: 1rem;
-    display: inline-flex;  /* Kombiniert inline-block + flex */
-    align-items: center;
-    justify-content: center;
-    vertical-align: top;
-    box-sizing: border-box;
-    background: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    cursor: pointer;
-    font-size: 14px;
-    line-height: 1.4;
-    overflow: hidden;
+  height: 100%;
+  width: auto;
+  aspect-ratio: 1 / 1;
+  margin-right: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  box-sizing: border-box;
+  background: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.4;
+  overflow: hidden;
 }
 
 aside li .textSlide:hover {
-    background: #555;
+  background: #555;
 }
 .projectDescription {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 2rem;
-    font-size: 1.2rem;
-    line-height: 1.6;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 .textSlide {
-    cursor: pointer;
-    background: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    display: inline-block;
-    width: 150px; 
-    height: 150px; 
-    vertical-align: top;
-    font-size: 14px;
-    line-height: 1.4;
-    overflow: hidden;
+  cursor: pointer;
+  background: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 1.4;
+  overflow: hidden;
 }
 .textSlide:hover {
-    background: #555;
+  background: #555;
 }
 #textDisplay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-height: 70%;  /* Etwas kleiner */
-    max-width: 70%;
-    font-size: 1.2rem;  /* Lesbare Größe */
-    line-height: 1.6;
-    padding: 2rem;
-    color: white;
-    background: rgba(0, 0, 0, 0.9);  /* Dunklerer Hintergrund */
-    border: 2.5px solid white;
-    overflow-y: auto;
-    box-sizing: border-box;
-    text-align: left;  /* Linksbündig für bessere Lesbarkeit */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 70%; /* Etwas kleiner */
+  max-width: 70%;
+  font-size: 1.2rem; /* Lesbare Größe */
+  line-height: 1.6;
+  padding: 2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.9); /* Dunklerer Hintergrund */
+  border: 2.5px solid white;
+  overflow-y: auto;
+  box-sizing: border-box;
+  text-align: left; /* Linksbündig für bessere Lesbarkeit */
 }
-@media (max-aspect-ratio: 1/1){
-    .leftNote{
-        width: 50%;
-    }
+@media (max-aspect-ratio: 1/1) {
+  .leftNote {
+    width: 50%;
+  }
 }

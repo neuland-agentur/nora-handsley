@@ -1,7 +1,9 @@
 ---
 layout: about
-title: Print
+title: Publications
 ---
+
 - 2023 Samt Magazin
-- 2024 bpb Magazin Thema: Jugend (Cover und Innenteil)
+- 2024 bpb Magazin (Cover & inside)
 - 2024 Neemodsch Magazin
+- 2026 Fluter Magazine
