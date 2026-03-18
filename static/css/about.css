@@ -2,22 +2,30 @@ main {
   padding: 0 1rem 4rem 1rem;
   width: 100%;
   box-sizing: border-box;
-  margin-top: 50vh;
-  font-size: 0;
+  margin-top: 4rem;
 }
 
-main > div:not(.postit-container) {
-  display: inline-block;
-  width: 25%;
-  vertical-align: top;
+.top-row,
+.bottom-row {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+}
+
+.bottom-row {
+  margin-top: 2rem;
+}
+
+.top-row > div,
+.bottom-row > div {
+  flex: 1;
   text-transform: none;
-  box-sizing: border-box;
-  padding-right: 2rem;
   font-size: 1rem;
 }
 
-main > div:not(.postit-container):last-of-type {
-  padding-right: 0;
+.bio {
+  flex: 1;
+  font-size: 1rem;
 }
 
 main div h2 {
@@ -25,21 +33,17 @@ main div h2 {
   margin-bottom: 1rem;
 }
 
-main li,
-main p {
+li,
+p {
   margin-bottom: 1rem;
 }
 
 .postit-container {
-  display: inline-block !important;
-  width: 25% !important;
-  vertical-align: top;
-  padding-right: 0;
+  flex: 1;
+  max-width: 25%;
   text-align: center;
   cursor: pointer;
   position: relative;
-  top: 2rem;
-  left: 1rem;
   font-size: 1rem;
 }
 
@@ -55,6 +59,7 @@ main p {
 .postit:hover {
   transform: rotate(-8deg) scale(1.05);
 }
+
 .contact-links {
   display: none;
   flex-direction: row;
@@ -84,9 +89,11 @@ main p {
   color: #ffcc00 !important;
   transform: scale(1.2);
 }
+
 .postit-container.active .contact-links {
   display: flex;
 }
+
 @media (max-aspect-ratio: 1/1) {
   main {
     margin-bottom: 20vh;

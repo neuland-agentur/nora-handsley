@@ -6,33 +6,39 @@
   <body>
     {{ partial "navigation.html" . }}
     <main>
-      {{range .Pages}} {{if .Params.bio}}
-      <div class="bio">{{.Content}}</div>
-      {{else}}
-      <div>
-        <h2>{{.Title}}</h2>
-        {{.Content}}
+      <div class="top-row">
+        {{range .Pages}} {{if not .Params.bio}}
+        <div>
+          <h2>{{.Title}}</h2>
+          {{.Content}}
+        </div>
+        {{end}} {{end}}
       </div>
-      {{end}} {{end}}
 
-      <div class="postit-container">
-        <img src="/img/callMePostIt.png" alt="Call me!" class="postit" />
-        <div class="contact-links">
-          <a
-            href="mailto:nora.handsley@gmail.com"
-            class="contact-link"
-            title="Mail"
-          >
-            <i class="fa-solid fa-envelope"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/norahandsley/"
-            target="_blank"
-            class="contact-link"
-            title="Instagram"
-          >
-            <i class="fa-brands fa-instagram"></i>
-          </a>
+      <div class="bottom-row">
+        {{range .Pages}} {{if .Params.bio}}
+        <div class="bio">{{.Content}}</div>
+        {{end}} {{end}}
+
+        <div class="postit-container">
+          <img src="/img/callMePostIt.png" alt="Call me!" class="postit" />
+          <div class="contact-links">
+            <a
+              href="mailto:nora.handsley@gmail.com"
+              class="contact-link"
+              title="Mail"
+            >
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/norahandsley/"
+              target="_blank"
+              class="contact-link"
+              title="Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
         </div>
       </div>
     </main>
