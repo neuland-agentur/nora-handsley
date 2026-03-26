@@ -2,48 +2,8 @@
 layout: projects
 title: Heiligeili
 year: 2022
-mainImg: ./hd/NoraHandsley-1.jpeg
+posterindex: 1
+weight: 3
 ---
-- ![](./sd/NoraHandsley-1.jpeg)
-- ![](./sd/NoraHandsley-2.jpeg)
-- ![](./sd/NoraHandsley-3.jpeg)
-- ![](./sd/NoraHandsley-4.jpeg)
-- ![](./sd/NoraHandsley-5.jpeg)
-- ![](./sd/NoraHandsley-6.jpeg)
-- ![](./sd/NoraHandsley-7.jpeg)
-- ![](./sd/NoraHandsley-8.jpeg)
-- ![](./sd/NoraHandsley-9.jpeg)
-- ![](./sd/NoraHandsley-10.jpeg)
-- ![](./sd/NoraHandsley-11.jpeg)
-- ![](./sd/NoraHandsley-12.jpeg)
-- ![](./sd/NoraHandsley-13.jpeg)
-- ![](./sd/NoraHandsley-14.jpeg)
-- ![](./sd/NoraHandsley-15.jpeg)
-- ![](./sd/NoraHandsley-16.jpeg)
-- ![](./sd/NoraHandsley-17.jpeg)
-- ![](./sd/NoraHandsley-18.jpeg)
-- ![](./sd/NoraHandsley-19.jpeg)
-- ![](./sd/NoraHandsley-20.jpeg)
-- ![](./sd/NoraHandsley-21.jpeg)
-- ![](./sd/NoraHandsley-22.jpeg)
-- ![](./sd/NoraHandsley-23.jpeg)
-- ![](./sd/NoraHandsley-24.jpeg)
-- ![](./sd/NoraHandsley-25.jpeg)
-- ![](./sd/NoraHandsley-26.jpeg)
-- ![](./sd/NoraHandsley-27.jpeg)
-- ![](./sd/NoraHandsley-28.jpeg)
-- ![](./sd/NoraHandsley-29.jpeg)
-- ![](./sd/NoraHandsley-30.jpeg)
-- ![](./sd/NoraHandsley-31.jpeg)
-- ![](./sd/AustellungsansichtNoraHandsley-2.jpeg) 
-- ![](./sd/AustellungsansichtNoraHandsley-3.jpeg)
-- ![](./sd/AustellungsansichtNoraHandsley-4.jpeg) 
-- ![](./sd/AustellungsansichtNoraHandsley-5.jpeg) 
-- ![](./sd/AustellungsansichtNoraHandsley-6.jpeg) 
-- ![](./sd/AustellungsansichtNoraHandsley-7.jpeg) 
-- ![](./sd/AustellungsansichtNoraHandsley-8.jpeg) 
-- ![](./sd/AustellungsansichtNoraHandsley-9.jpeg) 
-- ![](./sd/AustellungsansichtNoraHandsley-10.jpeg) 
-- ![](./sd/AustellungsansichtNoraHandsley-11.jpeg) 
-- ![](./sd/AustellungsansichtNoraHandsley.jpeg) 
-- <div class="textSlide" data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.">Info</div>
+
+<div class="textSlide" data-text="Space is what is made of it in the moment. The people who move through »Heiligengeistfeld« are as diverse as the ways it is used.On some days, it feels like a vast concrete desert, with only distant city sounds, rustling trees, and a drifting plastic bag. On others, when events like the Hamburger Dom or Schlagermove take place, the field transforms completely. As the city slowly returned to outdoor life after the pandemic, the field filled with spontaneous encounters: people sitting in the sun, skaters navigating the open space, and later, improvised night raves. The continuous reinvention of the place fascinated me. I docu- mented these transformations to show how the Heiligengeistfeld is shaped not by architecture, but by movement, bodies, rituals, and spontaneous use. Its emptiness, scale, and openness makes it a living space, constantly redefined by those who inhabit it. The field becomes a stage, a playground, a temporary village, and a laboratory for public life in Hamburg. My work highlights how people engage with, reinterpret, and give meaning to this urban space.">Info</div>

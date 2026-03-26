@@ -2,21 +2,9 @@
 layout: projects
 title: das komische gefühl
 year: 2023
-mainImg: ./hd/193.jpeg
+posterindex: 1
+weight: 1
 ---
-- ![](./sd/194.jpeg)
-- ![](./sd/195.jpeg)
-- ![](./sd/196.jpeg)
-- ![](./sd/197.jpeg)
-- ![](./sd/198.jpeg)
-- ![](./sd/199.jpeg)
-- ![](./sd/200.jpeg)
-- ![](./sd/201.jpeg)
-- ![](./sd/202.jpeg)
-- ![](./sd/203.jpeg)
-- ![](./sd/204.jpeg)
-- ![](./sd/205.jpeg)
-- ![](./sd/206.jpeg)
-- ![](./sd/Ausstellungsansicht01.jpeg)
-- ![](./sd/Ausstellungsansicht02.jpeg)
-- <div class="textSlide" data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.">Info</div>
+
+<div class="textSlide" data-text="The strange feeling comes and goes. As a child I already tried to explain. what happens inside of me. Like a phantom. Nobody sees it, nobody feels it and nobody can help. It always starts with the Déjà-rêvé. I dreamed about it. The witch, the clown, the window, the albumcover. The moment of remembrance follows the fear of it beeing back. Everything around me seems misty and a friends voice
+- white noise.">Info</div>

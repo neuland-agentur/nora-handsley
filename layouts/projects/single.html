@@ -1,25 +1,54 @@
 <html>
-    <head>
-        {{ partial "head.html" . }}
-        <link rel="stylesheet" href="/css/project.css">
-    </head>
-    <body>
-        <div id="clickAreas" class="clickAreas">
-            <div id="clickAreaLeft" class="clickArea clickAreaLeft" onclick="slideLeft()"></div>
-            <div id="clickAreaRight" class="clickArea clickAreaRight"  onclick="slideRight()"></div>
-        </div>
-        {{ partial "navigation.html" . }}
-        <main>
-            <img id="mainImg" src="{{.Params.mainImg}}">
-            <div class="leftNote">{{.Title}}</div>
-           <div class="rightNote">{{.Params.Year}}</div>
-        </main>
-        <aside id="images">
-             {{.Content}}
-        </aside>
-        
-        <script src="/js/project.js"></script>
-    </body>
+  <head>
+    {{ partial "head.html" . }}
+    <link rel="stylesheet" href="/css/project.css" />
+  </head>
+  <body>
+    {{ partial "navigation.html" . }}
+    <aside id="images">
+      <ul>
+        {{ $posterImage := "unset"}} {{$posterImageType := "unknown"}} {{ $index
+        := 0 }} {{$posterIndex := -1 }} {{if isset .Params "posterindex"}} {{
+        $posterIndex = .Params.posterindex}} {{end}} {{ with .Resources.ByType
+        "image" }} {{ range . }} {{ $sd := (.Resize "240x q50") }} {{ $hd :=
+        (.Resize "1080x q90") }} {{ $type := .MediaType.Type }} {{if eq $type
+        "image/jpeg"}} {{$type = "jpg"}} {{else if eq $type "image/png"}}
+        {{$type = "png"}} {{else}} {{$type = "unknown"}} {{end}} {{ $index = add
+        $index 1}} {{if eq $index $posterIndex}} {{$posterImage = $hd}}
+        {{$posterImageType = $type}} {{end}}
+        <li>
+          <img
+            class="imageType-{{$type}}"
+            src="{{ $sd.RelPermalink }}"
+            data-hd="{{ $hd.RelPermalink }}"
+            data-sd="{{ $sd.RelPermalink }}"
+          />
+        </li>
+        {{ end }} {{ end }}
+        <li>{{.Content}}</li>
+      </ul>
+    </aside>
+    <main>
+      <div class="leftNote">{{.Title}}</div>
+      <div class="rightNote">{{.Params.Year}}</div>
+      <img
+        id="mainImg"
+        src="{{$posterImage}}"
+        class="imageType-{{$posterImageType}}"
+      />
+      <div id="clickAreas" class="clickAreas">
+        <div
+          id="clickAreaLeft"
+          class="clickArea clickAreaLeft"
+          onclick="slideLeft()"
+        ></div>
+        <div
+          id="clickAreaRight"
+          class="clickArea clickAreaRight"
+          onclick="slideRight()"
+        ></div>
+      </div>
+    </main>
+    <script src="/js/project.js"></script>
+  </body>
 </html>
-
-

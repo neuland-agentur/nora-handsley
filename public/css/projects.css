@@ -1,71 +1,75 @@
-
-main ol{
-    width: 100%;
-    height: auto;
-    margin-top: 20vh;
-    margin-bottom: 20vh;
+main ol {
+  width: 100%;
+  height: auto;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
 }
-main ol > li{
-    position: relative;
-    display: block;
+main ol > li {
+  position: relative;
+  display: block;
 }
-.images{
-    position: relative;
-    height: 25vh;
-    overflow-y: scroll;
-    display: block;
+.images {
+  position: relative;
+  height: 25vh;
+  overflow-y: scroll;
+  display: block;
 }
-main ol ul{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    padding: 1rem;
-    padding-top: 2rem;
-    box-sizing: border-box;
-    width: auto;
-    white-space: nowrap;
+main ol ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 1rem;
+  padding-top: 2rem;
+  box-sizing: border-box;
+  width: auto;
+  white-space: nowrap;
 }
-main li{
-    display: inline;
+main li {
+  display: inline;
 }
-main li img{
-    height: 100%;
-    width: auto;
-    margin-right: 1rem;
+main li img {
+  height: 100%;
+  width: auto;
+  margin-right: 1rem;
 }
 main li .textSlide {
-    height: 100%;  /* Gleiche Höhe wie Bilder */
+  height: 100%; /* Gleiche Höhe wie Bilder */
+  width: auto;
+  aspect-ratio: 1 / 1; /* Quadratisch */
+  margin-right: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  background: #333;
+  color: white;
+  padding: 10px; /* Weniger padding */
+  text-align: center;
+  cursor: pointer;
+  font-size: 10px; /* Kleinere Schrift */
+  line-height: 1.2;
+  overflow: hidden;
+}
+.leftNote {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+}
+.rightNote {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+}
+.image-link {
+  margin: 0;
+  display: inline;
+  padding: 0;
+}
+@media (max-aspect-ratio: 1/1) {
+  footer {
+    position: initial;
+  }
+  footer ul li {
     width: auto;
-    aspect-ratio: 1 / 1;  /* Quadratisch */
-    margin-right: 1rem;
-    display: inline-block;
-    vertical-align: top;
-    box-sizing: border-box;
-    background: #333;
-    color: white;
-    padding: 10px;  /* Weniger padding */
-    text-align: center;
-    cursor: pointer;
-    font-size: 10px;  /* Kleinere Schrift */
-    line-height: 1.2;
-    overflow: hidden;
-}
-.leftNote{
-    position: absolute;
-    top: 0;
-    left: 1rem;
-}
-.rightNote{
-    position: absolute;
-    top: 0;
-    right: 1rem;
-}
-@media (max-aspect-ratio: 1/1){
-    footer{
-        position: initial;
-    }
-    footer ul li{
-        width: auto;
-    }
+  }
 }

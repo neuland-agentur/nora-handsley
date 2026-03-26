@@ -2,17 +2,21 @@ main {
   padding: 0 1rem 4rem 1rem;
   width: 100%;
   box-sizing: border-box;
-  margin-top: 4rem;
+  margin-top: 20vh;
+  margin-bottom: 33vh;
 }
 
-.top-row,
-.bottom-row {
+.top-row {
   display: flex;
-  width: 100%;
+  width: 75%;
   gap: 2rem;
 }
 
 .bottom-row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
   margin-top: 2rem;
 }
 
@@ -26,6 +30,8 @@ main {
 .bio {
   flex: 1;
   font-size: 1rem;
+  line-height: 1.7;
+  max-width: 75ch;
 }
 
 main div h2 {
@@ -33,9 +39,23 @@ main div h2 {
   margin-bottom: 1rem;
 }
 
-li,
-p {
-  margin-bottom: 1rem;
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  vertical-align: top;
+  padding-bottom: 1rem;
+}
+
+td:first-child {
+  white-space: nowrap;
+  padding-right: 1.5rem;
+}
+
+td:first-child {
+  width: 5rem;
 }
 
 .postit-container {
@@ -43,10 +63,21 @@ p {
   max-width: 25%;
   text-align: center;
   cursor: pointer;
-  position: relative;
+  position: fixed;
+  bottom: 72px;
+  right: 72px;
   font-size: 1rem;
+  flex: 0 0 15%;
 }
-
+/*
+#svg1 {
+  position: fixed;
+  bottom: 72px;
+  right: 72px;
+  width: 180px;
+  height: 180px;
+  transform: rotate(-8deg);
+}*/
 .postit {
   max-width: 100%;
   height: auto;
@@ -94,6 +125,9 @@ p {
   display: flex;
 }
 
+.backgroundOverflow {
+  background: black;
+}
 @media (max-aspect-ratio: 1/1) {
   main {
     margin-bottom: 20vh;
@@ -109,5 +143,15 @@ p {
   }
   footer ul li {
     width: auto;
+  }
+  .top-row {
+    width: 100%;
+  }
+  .bio {
+    max-width: 100%;
+  }
+  .postit-container {
+    position: initial;
+    max-width: 90%;
   }
 }
