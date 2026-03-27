@@ -68,8 +68,10 @@ li {
   text-align: right;
 }
 a {
+  color: inherit;
   padding: 1rem 0.5rem;
   display: block;
+  text-decoration: none;
 }
 footer {
   position: fixed;
