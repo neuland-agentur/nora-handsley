@@ -95,6 +95,7 @@ footer ul li a {
   display: inline;
   text-decoration: underline;
   padding: 0;
+  color: inherit;
 }
 footer ul li:nth-of-type(2) {
   text-align: center;
