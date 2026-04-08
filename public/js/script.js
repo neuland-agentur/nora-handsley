@@ -154,30 +154,46 @@ let images = [
   },
 ];
 
-let image = document.getElementById("image");
+let image1 = document.getElementById("image");
 let link = document.getElementById("link");
+let image2 = document.createElement("img");
+link.appendChild(image2);
 let n = Math.floor(Math.random() * images.length);
+let flag = false;
+let imageIndex;
+
+function preload1() {
+  image1.classList = images[imageIndex].class;
+  link.href = images[imageIndex].link;
+  image2.style.display = "none";
+  image1.style.display = "initial";
+  console.log("1");
+}
+function preload2() {
+  image2.classList = images[imageIndex].class;
+  link.href = images[imageIndex].link;
+  image1.style.display = "none";
+  image2.style.display = "initial";
+  console.log("2");
+}
 
 function setImage(noRecursion) {
   n++;
-  let i = n % images.length;
-  let cachedImageIndex = (i + 1) % images.length;
-  let cacheImage = new Image();
-  cacheImage.src = root + images[cachedImageIndex].source;
-  let viewImage = new Image();
-  viewImage.addEventListener("load", function () {
-    image.style.display = "none";
-    image.src = viewImage.src;
-    image.classList = images[i].class;
-    link.href = images[i].link;
-    image.style.display = "initial";
-    if (!noRecursion) {
-      setTimeout(setImage, timer);
-    }
-  });
-  viewImage.src = root + images[i].source;
+  imageIndex = n % images.length;
+  if (flag) {
+    image1.src = root + images[imageIndex].source;
+    flag = false;
+  } else {
+    image2.src = root + images[imageIndex].source;
+    flag = true;
+  }
+  if (!noRecursion) {
+    setTimeout(setImage, timer);
+  }
 }
 document.body.addEventListener("click", function () {
   setImage(true);
 });
+image1.addEventListener("load", preload1);
+image2.addEventListener("load", preload2);
 setImage();
