@@ -68,8 +68,10 @@ li {
   text-align: right;
 }
 a {
+  color: inherit;
   padding: 1rem 0.5rem;
   display: block;
+  text-decoration: none;
 }
 footer {
   position: fixed;
@@ -93,6 +95,7 @@ footer ul li a {
   display: inline;
   text-decoration: underline;
   padding: 0;
+  color: inherit;
 }
 footer ul li:nth-of-type(2) {
   text-align: center;

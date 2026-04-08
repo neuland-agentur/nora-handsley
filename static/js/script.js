@@ -161,12 +161,21 @@ let n = Math.floor(Math.random() * images.length);
 function setImage(noRecursion) {
   n++;
   let i = n % images.length;
-  image.src = root + images[i].source;
-  image.classList = images[i].class;
-  link.href = images[i].link;
-  if (!noRecursion) {
-    setTimeout(setImage, timer);
-  }
+  let cachedImageIndex = (i + 1) % images.length;
+  let cacheImage = new Image();
+  cacheImage.src = root + images[cachedImageIndex].source;
+  let viewImage = new Image();
+  viewImage.addEventListener("load", function () {
+    image.style.display = "none";
+    image.src = viewImage.src;
+    image.classList = images[i].class;
+    link.href = images[i].link;
+    image.style.display = "initial";
+    if (!noRecursion) {
+      setTimeout(setImage, timer);
+    }
+  });
+  viewImage.src = root + images[i].source;
 }
 document.body.addEventListener("click", function () {
   setImage(true);
