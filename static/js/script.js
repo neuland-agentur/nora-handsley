@@ -162,7 +162,7 @@ let n = Math.floor(Math.random() * images.length);
 image1.classList = images[n].class;
 image2.classList = images[(n + 1) % images.length].class;
 image1.style.display = "none";
-image2.style.display = "none";
+image2GI.style.display = "none";
 let flag = true;
 let imageIndex;
 
