@@ -129,20 +129,11 @@ td:first-child {
   background: black;
 }
 @media (max-aspect-ratio: 1/1) {
-  main {
-    margin-bottom: 20vh;
-  }
   main div,
   .postit-container {
     width: 100%;
     padding: 0;
     margin-bottom: 3rem;
-  }
-  footer {
-    position: initial;
-  }
-  footer ul li {
-    width: auto;
   }
   .top-row {
     width: 100%;
