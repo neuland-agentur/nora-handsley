@@ -68,11 +68,3 @@ main li .textSlide {
   display: inline;
   padding: 0;
 }
-@media (max-aspect-ratio: 1/1) {
-  footer {
-    position: initial;
-  }
-  footer ul li {
-    width: auto;
-  }
-}
