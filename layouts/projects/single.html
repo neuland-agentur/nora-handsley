@@ -9,10 +9,13 @@
       <ul>
         {{ $posterImage := "unset"}} {{$posterImageType := "unknown"}} {{ $index
         := 0 }} {{$posterIndex := -1 }} {{if isset .Params "posterindex"}} {{
-        $posterIndex = .Params.posterindex}} {{end}} {{ with .Resources.ByType
-        "image" }} {{ range . }} {{ $sd := (.Resize "240x q50") }} {{ $hd :=
-        (.Resize "1080x q90") }} {{ $type := .MediaType.Type }} {{if eq $type
-        "image/jpeg"}} {{$type = "jpg"}} {{else if eq $type "image/png"}}
+        $posterIndex = .Params.posterindex}} {{end}} {{ $images := slice }} {{
+        range .Resources.ByType "image" }} {{ $key := replaceRE `(\d+)` "00$1"
+        .Name }} {{ $key = replaceRE `0*(\d{3})` "$1" $key }} {{ $images =
+        $images | append (dict "key" $key "img" .) }} {{ end }} {{ range sort
+        $images "key" }} {{ with .img }} {{ $sd := (.Resize "240x q50") }} {{
+        $hd := (.Resize "1080x q90") }} {{ $type := .MediaType.Type }} {{if eq
+        $type "image/jpeg"}} {{$type = "jpg"}} {{else if eq $type "image/png"}}
         {{$type = "png"}} {{else}} {{$type = "unknown"}} {{end}} {{ $index = add
         $index 1}} {{if eq $index $posterIndex}} {{$posterImage = $hd}}
         {{$posterImageType = $type}} {{end}}
