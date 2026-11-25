@@ -17,7 +17,13 @@
                         {{$link := .Permalink}}
                             <ul>
                                 {{ $item := 0 }}
-                           {{ with .Resources.ByType "image" }} {{ range . }}
+                            {{ $images := slice }}
+                            {{ range .Resources.ByType "image" }}
+                            {{ $key := replaceRE `(\d+)` "00$1" .Name }}
+                            {{ $key = replaceRE `0*(\d{3})` "$1" $key }}
+                            {{ $images = $images | append (dict "key" $key "img" .) }}
+                            {{ end }}
+                            {{ range sort $images "key" }} {{ with .img }}
                            {{ $sd := (.Resize "240x q50") }} 
                            {{ $hd := (.Resize "1080x q90") }}
                             
