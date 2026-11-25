@@ -146,3 +146,7 @@ td:first-child {
     max-width: 90%;
   }
 }
+.contact-link .icon {
+  width: 1em;
+  height: 1em;
+}
