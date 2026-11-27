@@ -4,5 +4,5 @@ content:
     label: "Legal Page"
     type: file
     path: content/legal/index.md
-    fields: [{ name: "legal", type: "string", required: "true" }]
+    fields: [{ name: "Content", type: "string", required: "true" }]
     filename: "{index}.md"
