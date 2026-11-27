@@ -4,12 +4,19 @@ content:
     label: "Legal Page"
     type: file
     path: content/legal/index.md
-    fields: [
-      { name: "title", type: "string", required: "true", readonly: "true" },
-      { name: "layout", type: "string", required: "true", hidden: "true", readonly: "true" },
-      { name: "body", type: "rich-text", required: "true" }
-    ]
-    filename: "{index}.md"
+    fields: 
+      - name: title 
+        type: string 
+        required: true 
+        readonly: true
+      - name: layout
+        type: string 
+        required: true 
+        hidden: true 
+        readonly: true
+      - name: body
+        type: rich-text
+        required: true
 
   - name: about-cv
     label: "About – CV"
