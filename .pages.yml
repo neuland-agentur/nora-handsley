@@ -20,7 +20,7 @@ content:
       { name: "body", type: "rich-text", required: "true"}
     ]
   - name: about
-    label: "Exhibitions"
+    label: "About Page"
     type: file
     path: content/about/exhibitions.md
     fields: [
