@@ -52,7 +52,7 @@ content:
           label: "Jahr"
           type: string
         - name: venue
-          label:"Venue"
+          label:"Ort / Stadt"
           type: string
 
 
