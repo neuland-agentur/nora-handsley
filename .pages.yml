@@ -43,10 +43,18 @@ content:
         type: string
         default: "Exhibitions"
         readonly: true
-      - name: body
+      - name: items
         label: "Inhalt"
-        type: rich-text
-        required: true
+        type: object
+        list: true
+        fields:
+        - name: year
+          label: "Jahr"
+          type: string
+        - name: venue
+          label:"Venue"
+          type: string
+
 
   - name: about-awards
     label: "About – Awards"
@@ -58,10 +66,17 @@ content:
         type: string
         default: "Awards"
         readonly: true
-      - name: body
+      - name: items
         label: "Inhalt"
-        type: rich-text
-        required: true
+        type: object
+        list: true
+        fields:
+        - name: year
+          label: "Jahr"
+          type: string
+        - name: name
+          label:"Name"
+          type: string
 
   - name: about-print
     label: "About – Publications"
