@@ -97,6 +97,6 @@ content:
           label: "Jahr"
           type: string
         - name: publication
-          label:"Magazin"
+          label: "Magazin"
           type: string
 
