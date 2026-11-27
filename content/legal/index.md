@@ -1,3 +1,5 @@
 ---
-Content: test2
+title: Legal
+layout: legal
+content: test3
 ---
