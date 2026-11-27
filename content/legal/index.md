@@ -1,6 +1,3 @@
 ---
-title: Legal
-layout: legal
+Content: test2
 ---
-
-Test
