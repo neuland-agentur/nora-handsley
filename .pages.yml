@@ -7,6 +7,6 @@ content:
     fields: [
       { name: "title", type: "string", required: "true", readonly: "true" },
       { name: "layout", type: "string", required: "true", hidden: "true", readonly: "true" },
-      { name: "content", type: "string", required: "true" }
+      { name: "body", type: "rich-text", required: "true" }
     ]
     filename: "{index}.md"
