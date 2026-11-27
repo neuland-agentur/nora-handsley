@@ -10,36 +10,64 @@ content:
       { name: "body", type: "rich-text", required: "true" }
     ]
     filename: "{index}.md"
-    
-  - name: about
-    label: "About Page"
+
+  - name: about-cv
+    label: "About – CV"
     type: file
     path: content/about/cv.md
-    fields: [
-      { name: "CV", type: "string", required: "true", readonly: "true" },
-      { name: "body", type: "rich-text", required: "true"}
-    ]
-  - name: about
-    label: "About Page"
+    fields:
+      - name: title
+        label: "Titel"
+        type: string
+        default: "CV"
+        readonly: true
+      - name: body
+        label: "Inhalt"
+        type: rich-text
+        required: true
+
+  - name: about-exhibitions
+    label: "About – Exhibitions"
     type: file
     path: content/about/exhibitions.md
-    fields: [
-      { name: "Exhibitions", type: "string", required: "true", readonly: "true" },
-      { name: "body", type: "rich-text", required: "true"}
-    ]
-  - name: about
-    label: "About Page"
+    fields:
+      - name: title
+        label: "Titel"
+        type: string
+        default: "Exhibitions"
+        readonly: true
+      - name: body
+        label: "Inhalt"
+        type: rich-text
+        required: true
+
+  - name: about-awards
+    label: "About – Awards"
     type: file
     path: content/about/awards.md
-    fields: [
-      { name: "Awards", type: "string", required: "true", readonly: "true" },
-      { name: "body", type: "rich-text", required: "true"}
-    ]
-  - name: about
-    label: "About Page"
+    fields:
+      - name: title
+        label: "Titel"
+        type: string
+        default: "Awards"
+        readonly: true
+      - name: body
+        label: "Inhalt"
+        type: rich-text
+        required: true
+
+  - name: about-print
+    label: "About – Publications"
     type: file
     path: content/about/print.md
-    fields: [
-      { name: "Publications", type: "string", required: "true", readonly: "true" },
-      { name: "body", type: "rich-text", required: "true"}
-    ]
+    fields:
+      - name: title
+        label: "Titel"
+        type: string
+        default: "Publications"
+        readonly: true
+      - name: body
+        label: "Inhalt"
+        type: rich-text
+        required: true
+
