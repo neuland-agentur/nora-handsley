@@ -73,8 +73,15 @@ content:
         type: string
         default: "Publications"
         readonly: true
-      - name: body
+      - name: items
         label: "Inhalt"
-        type: rich-text
-        required: true
+        type: object
+        list: true
+        fields:
+        - name: year
+          label: "Jahr"
+          type: string
+        - name: publication
+          label:"Magazin"
+          type: string
 
