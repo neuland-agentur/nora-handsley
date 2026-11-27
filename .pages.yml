@@ -10,3 +10,27 @@ content:
       { name: "body", type: "rich-text", required: "true" }
     ]
     filename: "{index}.md"
+    
+  - name: about
+    label: "About Page"
+    type: file
+    path: content/about/cv.md
+    fields: [
+      { name: "CV", type: "string", required: "true", readonly: "true" },
+      { name: "body", type: "rich-text", required: "true"}
+    ]
+    path: content/about/exhibitions.md
+    fields: [
+      { name: "Exhibitions", type: "string", required: "true", readonly: "true" },
+      { name: "body", type: "rich-text", required: "true"}
+    ]
+    path: content/about/awards.md
+    fields: [
+      { name: "Awards", type: "string", required: "true", readonly: "true" },
+      { name: "body", type: "rich-text", required: "true"}
+    ]
+    path: content/about/print.md
+    fields: [
+      { name: "Publications", type: "string", required: "true", readonly: "true" },
+      { name: "body", type: "rich-text", required: "true"}
+    ]
