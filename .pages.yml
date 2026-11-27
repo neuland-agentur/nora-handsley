@@ -19,16 +19,25 @@ content:
       { name: "CV", type: "string", required: "true", readonly: "true" },
       { name: "body", type: "rich-text", required: "true"}
     ]
+  - name: about
+    label: "About Page"
+    type: file
     path: content/about/exhibitions.md
     fields: [
       { name: "Exhibitions", type: "string", required: "true", readonly: "true" },
       { name: "body", type: "rich-text", required: "true"}
     ]
+  - name: about
+    label: "About Page"
+    type: file
     path: content/about/awards.md
     fields: [
       { name: "Awards", type: "string", required: "true", readonly: "true" },
       { name: "body", type: "rich-text", required: "true"}
     ]
+  - name: about
+    label: "About Page"
+    type: file
     path: content/about/print.md
     fields: [
       { name: "Publications", type: "string", required: "true", readonly: "true" },
