@@ -73,7 +73,7 @@ content:
         type: string
         default: "Publications"
         readonly: true
-      - name: body
+      - name: items
         label: "Inhalt"
         type: object
         list: true
