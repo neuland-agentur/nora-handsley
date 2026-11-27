@@ -75,7 +75,7 @@ content:
           label: "Jahr"
           type: string
         - name: name
-          label:"Name"
+          label: "Name"
           type: string
 
   - name: about-print
