@@ -1,0 +1,8 @@
+media: media
+content:
+  - name: legal
+    label: "Legal Page"
+    type: file
+    path: content/legal
+    fields: [{ name: "legal", type: "string", required: "true" }]
+    filename: "{index}.md"
